@@ -6,21 +6,28 @@ package com.droit.datastore;
 public interface DescribedObject {
 
     /**
-     * Data object.
+     * The ID of this DescribedObject.
+     *
+     * @return the ID
+     */
+    ObjectID getID();
+
+    /**
+     * The stored data.
      *
      * @return the object
      */
-    public Object data();
+    public Object getData();
 
     /**
-     * Meta data object.
+     * The metadata associated with the data.
      *
      * @return the object
      */
-    public Object metaData();
+    public Object getMetaData();
 
     /**
-     * Gets version.
+     * The version ID of the data.
      *
      * @return the version
      */
